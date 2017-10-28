@@ -9,6 +9,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/friends', function(req, res, next) {
+	console.log("test2");
+	console.log(app.get('data'));
 	res.render('friends', {retrievedData : app.get('data')});
 });
 
@@ -70,7 +72,8 @@ function findMatch(possibleMatches, yourScores, res){
 			matches.push([possibleMatches[i]["name"], matchTestScore]);
 		}
 	}
-	app.set('data', matches);
+	console.log("test");
+	res.render('friends', {"data" : matches});
 }
 
 module.exports = router;

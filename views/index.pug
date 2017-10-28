@@ -1,101 +1,99 @@
-doctype html
-html(lang="en")
-	head
-		title=Friendfinder
-	body
-		form(method="post" action="/friends")
-			label(for="name") Name?
-			br
-			input(id="name" name="name" type="text")
-			br
-			label(for="walks") Do you like walks on the beach?
-			br
-			select(id="walks" name="walks") Do you like long walks on the beach?
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="sunsets") Do you like sunsets
-			br
-			select(id="sunsets" name="sunsets")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="dogs") Do you like dogs?
-			br
-			select(id="dogs" name="dogs")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="movies") Do you like action movies?<
-			br
-			select(id="movies" name="movies")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="spacetime") Do you want a ride in a T.A.R.D.I.S?
-			br
-			select(id="spacetime" name="spacetime")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="universals") How do you feel about universals existing as real and distinct entities?
-			br
-			select(id="universals" name="universals")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="angry") How much do you want to see my angry?
-			br
-			select(id="angry" name="angry")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="soda") How much do you love Orange Soda?
-			br
-			select(id="soda" name="soda")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="friendship") Is our friendship inconceivable?
-			br
-			select(id="friendship" name="friendship")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			label(for="story") Chances of this being a never ending story?
-			br
-			select(id="story" name="story")
-				option(value="1") 1
-				option(value="2") 2
-				option(value="3") 3
-				option(value="4") 4
-				option(value="5") 5	
-			br
-			input(type="submit" value="submit")
+extends layout
+
+block content
+	form(method="post" action="/friends")
+		label(for="name") Name?
+		br
+		input(id="name" name="name" type="text")
+		br
+		label(for="walks") Do you like walks on the beach?
+		br
+		select(id="walks" name="walks") Do you like long walks on the beach?
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="sunsets") Do you like sunsets
+		br
+		select(id="sunsets" name="sunsets")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="dogs") Do you like dogs?
+		br
+		select(id="dogs" name="dogs")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="movies") Do you like action movies?<
+		br
+		select(id="movies" name="movies")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="spacetime") Do you want a ride in a T.A.R.D.I.S?
+		br
+		select(id="spacetime" name="spacetime")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="universals") How do you feel about universals existing as real and distinct entities?
+		br
+		select(id="universals" name="universals")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="angry") How much do you want to see my angry?
+		br
+		select(id="angry" name="angry")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="soda") How much do you love Orange Soda?
+		br
+		select(id="soda" name="soda")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="friendship") Is our friendship inconceivable?
+		br
+		select(id="friendship" name="friendship")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		label(for="story") Chances of this being a never ending story?
+		br
+		select(id="story" name="story")
+			option(value="1") 1
+			option(value="2") 2
+			option(value="3") 3
+			option(value="4") 4
+			option(value="5") 5	
+		br
+		input(type="submit" value="submit")
